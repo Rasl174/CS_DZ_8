@@ -10,19 +10,17 @@ namespace CS_DZ_8
     {
         static void Main(string[] args)
         {
-            string Name;
-            string Password;
+            string name;
+            string password;
             string colorConsole;
             string userInput;
-            int cycles = 100;
+            int cycles = 1;
 
             Console.WriteLine("Добро пожаловать в программу. ");
 
             while (cycles > 0)
             {
                 Console.WriteLine("Выберите нужное действие: ");
-
-                cycles--;
 
                 Console.WriteLine("1 - Установить имя");
                 Console.WriteLine("2 - Установить пароль");
@@ -35,14 +33,14 @@ namespace CS_DZ_8
                     case "1":
                         Console.Clear();
                         Console.Write("Введите ваше имя: ");
-                        Name = Console.ReadLine();
+                        name = Console.ReadLine();
                         Console.Clear();
                         break;
 
                     case "2":
                         Console.Clear();
                         Console.Write("Введите пароль: ");
-                        Password = Console.ReadLine();
+                        password = Console.ReadLine();
                         Console.Clear();
                         break;
 
@@ -79,10 +77,9 @@ namespace CS_DZ_8
                 }
 
 
-                
+               
 
             }
-
 
 
         }
