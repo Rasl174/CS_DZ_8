@@ -14,11 +14,12 @@ namespace CS_DZ_8
             string password;
             string colorConsole;
             string userInput;
-            int cycles = 1;
+            bool esc;
 
             Console.WriteLine("Добро пожаловать в программу. ");
+            esc = true;
 
-            while (cycles > 0)
+            while (esc)
             {
                 Console.WriteLine("Выберите нужное действие: ");
 
@@ -71,7 +72,7 @@ namespace CS_DZ_8
                     case "4":
                     case "ESC":
                         Console.Clear();
-                        Environment.Exit(0);
+                        esc = false;
                         break;
 
                 }
